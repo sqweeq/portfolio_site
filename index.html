@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" type="module"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <link rel="stylesheet" href="path/to/swiper.min.css" />
+
+    <title>Hello I'm Brandon</title>
+  </head>
+  <body>
+    <div class="portfolio-container">
+      <div class="intro contain">
+        <div class="navbar">
+          <h3>Technologies</h3>
+          <h3>Projects</h3>
+          <h3>Contact</h3>
+        </div>
+
+        <div class="body-space">
+          <img src="./images/images-12.jpeg" alt="Avatar" />
+
+          <h1>Hi, I'm Brandon</h1>
+          <hr />
+          <h3>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
+            repudiandae numquam cumque alias ullam assumenda.adipisicing elit.
+          </h3>
+          <button>My Resume</button>
+        </div>
+      </div>
+      <div class="about contain">
+        <h1>About Me</h1>
+        <hr />
+        <div class="about-grids">
+          <div class="logo-col">
+            <i class="fa fa-clock-o"></i>
+            <h3>Timely</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+
+          <div class="logo-col">
+            <i class="fa fa-lightbulb-o"></i>
+            <h3>Intuitive</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+
+          <div class="logo-col">
+            <i class="fa fa-wechat"></i>
+            <h3>Team Player</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+
+          <div class="logo-col">
+            <i class="fa fa-wrench"></i>
+            <h3>Precise</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="technologies contain">
+        <h1>What Do I use?</h1>
+        <hr />
+        <p>I have experience with the following tools and technologies</p>
+        <div class="tech-logos-container">
+          <div class="tech-individual javascript-logo">
+            <img src="./images/hiclipart.com.png" alt="" />
+            <p>JavaScript</p>
+          </div>
+          <div class="tech-individual html-logo">
+            <img src="./images/htmllogo.png" alt="" />
+            <p>HTML 5</p>
+          </div>
+          <div class="tech-individual css-logo">
+            <img src="./images/csslogo.png" alt="" />
+            <p>CSS 3</p>
+          </div>
+          <div class="tech-individual bootstrap-logo">
+            <img src="./images/Bootstraplogo.png" alt="" />
+            <p>Bootstrap</p>
+          </div>
+          <div class="tech-individual node-logo">
+            <img src="./images/nodelog.png" alt="" />
+            <p>NodeJS</p>
+          </div>
+          <div class="tech-individual react-logo">
+            <img src="./images/reactlogo.png" alt="" />
+            <p>React</p>
+          </div>
+          <div class="tech-individual mongo-logo">
+            <img src="./images/mongo.png" alt="" />
+            <p>MongoDB</p>
+          </div>
+          <div class="tech-individual git-logo">
+            <img src="./images/git.png" alt="" />
+            <p>Git</p>
+          </div>
+        </div>
+      </div>
+      <div class="my-projects contain">
+        <h1>My Projects</h1>
+        <hr />
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide"
+              style="background-image:url(./images/siteimages/free-images-crello.png)"
+            >
+              <!-- <img src="./images/siteimages/free-images-crello.png" alt="" /> -->
+              <p>Slide 1</p>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image:url(./images/siteimages/free-images-flickr.png)"
+            >
+              <!-- <img src="./images/siteimages/free-images-flickr.png" alt="" /> -->
+              <p>Slide 2</p>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image:url(./images/siteimages/free-images-istock.png)"
+            >
+              <!-- <img src="./images/siteimages/free-images-istock.png" alt="" /> -->
+              <p>Slide 3</p>
+            </div>
+            <div
+              class="swiper-slide"
+              style="background-image:url(./images/siteimages/free-images-pexels.png)"
+            >
+              <!-- <img src="./images/siteimages/free-images-pexels.png" alt="" /> -->
+
+              <p>Slide 4</p>
+            </div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="contact contain"><h1>Contact</h1></div>
+      <footer class="footer">&copy Brandon Tsai 2020</footer>
+    </div>
+    <script src="path/to/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        centeredSlides: true,
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true
+        },
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      });
+    </script>
+  </body>
+</html>

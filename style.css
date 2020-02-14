@@ -1,0 +1,145 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+.portfolio-container {
+  background: linear-gradient(#155799, #159957);
+}
+.contain {
+  height: 115vh;
+}
+.navbar {
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 50%;
+  float: right;
+}
+.body-space,
+.technologies,
+.my-projects,
+.contact {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+
+  justify-content: center;
+  padding: 0.7rem 2rem 1.5rem 4rem;
+  text-align: left;
+}
+.body-space img {
+  border-radius: 50%;
+  width: 37%;
+  height: auto;
+  padding-bottom: 0.7rem;
+}
+.body-space h1 {
+  font-weight: bolder;
+}
+.body-space hr {
+  width: 15rem;
+}
+hr {
+  margin: 1rem 0rem;
+}
+.body-space h3 {
+  margin-bottom: 1rem;
+}
+.body-space button {
+  margin: 0.5rem;
+  padding: 1rem;
+  color: #159957;
+  width: 60%;
+  border-radius: 0.7rem;
+}
+.about {
+  height: 125vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  justify-content: center;
+  padding: 0.7rem 2rem 1.5rem 4rem;
+}
+.about h1 {
+  width: 65%;
+  text-align: left;
+}
+.about hr {
+  width: 10rem;
+  margin-bottom: 3.7rem;
+}
+.about-grids {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.logo-col {
+  text-align: center;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+}
+.logo-col i {
+  font-size: 3.5rem;
+}
+.logo-col h3 {
+  padding: 1.3rem 0rem 0.75rem 0rem;
+}
+
+.tech-individual img {
+  height: 3rem;
+  width: auto;
+}
+
+.tech-logos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3px 1fr;
+  padding: 1.5rem 0rem;
+}
+.technologies {
+  width: 100%;
+  height: 115vh;
+}
+.tech-individual h1 {
+  padding: 2rem 0rem;
+}
+.technologies hr {
+  width: 15rem;
+}
+.technologies p {
+  padding: 1.8rem 0rem;
+}
+.tech-individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+.my-projects {
+  width: 100%;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: auto;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide p {
+  text-align: center;
+  height: 40%;
+}
