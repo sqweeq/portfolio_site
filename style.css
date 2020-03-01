@@ -488,7 +488,7 @@ button:focus {
 
   .my-projects {
     padding: 2rem 0.4rem;
-    margin: 0;
+    margin: 4rem 0rem 0rem 0rem;
   }
 
   .contact {
@@ -620,7 +620,7 @@ button:focus {
 
   .my-projects {
     padding: 2rem 1.4rem;
-    margin: 0;
+    margin: 7.5rem 0rem 0rem 0rem;
   }
 
   .project-gifs h2 {
