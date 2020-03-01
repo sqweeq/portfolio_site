@@ -6,7 +6,7 @@ document.body.scrollTop = 0; // For Safari
 // function to show divs when scrolled to
 function scrollAppear() {
   let aboutHead = document.querySelector(".about-headings");
-  let aboutHr = document.querySelector(".about-hr");
+
   let aboutImg = document.querySelector(".about-img");
   let aboutIntro = document.querySelector(".about-intro");
   let aboutPreGrids = document.querySelector(".about-pre-grids");
@@ -26,7 +26,7 @@ function scrollAppear() {
     aboutPreGrids,
     aboutIntro,
     aboutHead,
-    aboutHr,
+
     aboutImg,
     techDiv,
     projectsDiv,

@@ -15,16 +15,18 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
-hr {
-  padding: 0.1rem;
-  width: 100%;
-  margin: 0rem auto !important;
-
-  background-color: whitesmoke;
-  border-radius: 0.5rem;
-  border: none;
+span {
+  border-bottom: 2.5px solid black;
+  padding: 0 0 10px;
+  margin: 0;
+  display: inline-block;
+  color: black;
 }
+.white-span {
+  border-bottom: 2.5px solid white;
+  color: rgba(255, 255, 255, 0.941);
+}
+
 /* bg images */
 .portfolio-container {
   background: rgba(0, 0, 0, 0.954);
@@ -54,6 +56,7 @@ hr {
   padding: 0.7rem 4rem 1.5rem 4rem;
   text-align: left;
 }
+
 /* bodyspace */
 .body-space {
   height: 115vh;
@@ -82,10 +85,6 @@ hr {
 
 .body-space h1 {
   margin: 1rem 0rem;
-}
-.body-space hr {
-  width: 75vw;
-  margin: 0 !important;
 }
 
 .body-space p {
@@ -117,6 +116,10 @@ button:focus {
   width: 100%;
   font-size: 1.2rem;
 }
+.resume-button i {
+  padding-top: 0.5rem;
+}
+
 .resume-button:hover .resume-hover,
 .resume-button:hover .fa {
   color: black;
@@ -142,9 +145,7 @@ button:focus {
   padding-top: 2rem;
   padding-bottom: 0.5rem;
 }
-.about hr {
-  width: 50vw;
-}
+
 .about-intro {
   display: flex;
   flex-direction: row;
@@ -213,10 +214,7 @@ button:focus {
   padding-top: 2rem;
   padding-bottom: 0.5rem;
 }
-.technologies hr {
-  width: 50vw;
-  background-color: rgba(0, 0, 0, 0.89);
-}
+
 .technologies p {
   padding: 1rem 0rem;
   color: rgba(0, 0, 0, 0.89);
@@ -277,6 +275,7 @@ button:focus {
   overflow: hidden;
   cursor: pointer;
   margin-top: 1rem;
+  border: 1px black solid;
 }
 
 .projects-head h2 {
@@ -284,10 +283,10 @@ button:focus {
 
   padding-bottom: 0.5rem;
 }
-.my-projects hr {
-  width: 50vw;
 
-  background-color: rgba(0, 0, 0, 0.893);
+.newGif:hover {
+  opacity: 0.6;
+  transition: ease-in-out 0.3s;
 }
 .project-gifs h2 {
   margin-top: 2rem;
@@ -296,6 +295,15 @@ button:focus {
 }
 .project-gifs p {
   color: rgba(0, 0, 0, 0.893);
+  padding: 0.4rem 0rem;
+}
+.project-mini-github {
+  max-height: 6vh;
+  width: auto;
+}
+.project-mini-link {
+  max-height: 6vh;
+  width: auto;
 }
 /* contact */
 .contact {
@@ -303,10 +311,6 @@ button:focus {
 }
 .contact h2 {
   padding-bottom: 0.5rem;
-}
-.contact hr {
-  width: 38vw;
-  margin: 0 !important ;
 }
 
 /* copyright footer */
@@ -319,7 +323,6 @@ button:focus {
 .technologies,
 .about-headings,
 .about-intro,
-.about-hr,
 .about-img,
 .about-pre-grids,
 .about-grids,
@@ -372,10 +375,6 @@ button:focus {
     height: 95vh;
     align-content: center;
   }
-  .body-space hr {
-    padding: 0.1rem 0rem !important;
-    width: 64vw;
-  }
 
   .navbar {
     float: none;
@@ -410,9 +409,7 @@ button:focus {
     width: 100%;
     text-align: center;
   }
-  .about hr {
-    width: 48vw;
-  }
+
   .about-intro {
     padding-top: 1rem;
     display: flex;
@@ -489,17 +486,10 @@ button:focus {
     margin: 0;
   }
 
-  .my-projects hr {
-    width: 44vw;
-  }
-
   .contact {
     width: 100%;
     padding: 3rem;
     margin: 0;
-  }
-  .contact hr {
-    width: 26vw;
   }
 
   .contact p {
@@ -518,10 +508,6 @@ button:focus {
   .body-space {
     height: 95vh;
     align-content: center;
-  }
-  .body-space hr {
-    padding: 0.1rem 0rem !important;
-    width: 55vw;
   }
 
   .navbar {
@@ -555,9 +541,7 @@ button:focus {
     width: 100%;
     text-align: center;
   }
-  .about hr {
-    width: 30vw;
-  }
+
   .about-intro {
     padding-top: 1rem;
     display: flex;
@@ -614,9 +598,7 @@ button:focus {
   .technologies h2 {
     text-align: center;
   }
-  .technologies hr {
-    width: 38vw;
-  }
+
   .technologies p {
     text-align: center;
   }
@@ -634,10 +616,6 @@ button:focus {
   .my-projects {
     padding: 2rem 1.4rem;
     margin: 0;
-  }
-
-  .my-projects hr {
-    width: 34vw;
   }
 
   .project-gifs h2 {
@@ -661,9 +639,6 @@ button:focus {
   #myBtn .go-btn-text {
     color: rgb(99, 58, 222);
   }
-  .contact hr {
-    width: 17vw;
-  }
 }
 
 /* laptop/tablet */
@@ -674,10 +649,6 @@ button:focus {
   }
   .body-space {
     padding: 0.7rem 4rem 1.5rem 6rem;
-  }
-
-  .body-space hr {
-    width: 37vw;
   }
 
   .resume-button {
@@ -696,9 +667,6 @@ button:focus {
     margin: 0;
     width: 100%;
     text-align: center;
-  }
-  .about hr {
-    width: 22vw;
   }
 
   .about-text-points {
@@ -741,12 +709,6 @@ button:focus {
     padding: 2rem 0rem 1.5rem 0rem;
     text-align: center;
   }
-  .technologies hr {
-    width: 30vw;
-  }
-  .my-projects hr {
-    width: 25vw;
-  }
 
   .tech-logos-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -756,10 +718,6 @@ button:focus {
   .contact {
     height: 60vh;
     margin-top: 0;
-  }
-
-  .contact hr {
-    width: 15vw;
   }
 
   #myBtn .fa-long-arrow-up,
@@ -776,10 +734,6 @@ button:focus {
 
   .body-space {
     padding: 0.7rem 4rem 1.5rem 6rem;
-  }
-
-  .body-space hr {
-    width: 30vw;
   }
 
   .resume-button {
@@ -799,9 +753,6 @@ button:focus {
     margin: 0;
     width: 100%;
     text-align: center;
-  }
-  .about hr {
-    width: 25vw;
   }
 
   .about-text-points {
@@ -838,12 +789,7 @@ button:focus {
     padding: 2rem 0rem 1.5rem 0rem;
     text-align: center;
   }
-  .technologies hr {
-    width: 25vw;
-  }
-  .my-projects hr {
-    width: 20vw;
-  }
+
   .project-gifs {
     padding-bottom: 10rem;
   }
@@ -855,9 +801,6 @@ button:focus {
   .contact {
     height: 60vh;
     margin-top: 0;
-  }
-  .contact hr {
-    width: 11vw;
   }
 
   #myBtn .fa-long-arrow-up,
@@ -879,10 +822,6 @@ button:focus {
     padding: 0.7rem 4rem 1.5rem 6rem;
   }
 
-  .body-space hr {
-    width: 45vw;
-  }
-
   .resume-button {
     width: 24vw;
   }
@@ -901,10 +840,6 @@ button:focus {
     width: 100%;
     text-align: center;
   }
-  .about hr {
-    width: 25vw;
-  }
-
   .about-text-points {
     width: 60vw;
     height: 30vh;
@@ -949,12 +884,7 @@ button:focus {
     padding: 2rem 0rem 1.5rem 0rem;
     text-align: center;
   }
-  .technologies hr {
-    width: 25vw;
-  }
-  .my-projects hr {
-    width: 20vw;
-  }
+
   .project-gifs {
     padding-bottom: 13rem;
   }
@@ -964,17 +894,9 @@ button:focus {
     padding: 6rem;
   }
 
-  .my-projects hr {
-    width: 25vw;
-  }
-
   .contact {
     height: 60vh;
     margin-top: 0;
-  }
-
-  .contact hr {
-    width: 11vw;
   }
 
   #myBtn .fa-long-arrow-up,
