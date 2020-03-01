@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./app.js" type="module"></script>
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
@@ -13,175 +12,203 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <link rel="stylesheet" href="path/to/swiper.min.css" />
-
-    <title>Hello I'm Brandon</title>
+    <title>Brandon Tsai || Software developer</title>
   </head>
   <body>
     <div class="portfolio-container">
       <div class="intro contain">
         <div class="navbar">
-          <h3>Technologies</h3>
-          <h3>Projects</h3>
-          <h3>Contact</h3>
+          <a
+            onclick="scrollToSection(this.target)"
+            target="technology"
+            class="navbar-text"
+            >Technologies</a
+          >
+          <a
+            onclick="scrollToSection(this.target)"
+            target="project"
+            class="navbar-text"
+            >Projects</a
+          >
+          <a
+            onclick="scrollToSection(this.target)"
+            target="contacting"
+            class="navbar-text"
+            >Contact</a
+          >
         </div>
 
         <div class="body-space">
-          <img src="./images/images-12.jpeg" alt="Avatar" />
-
           <h1>Hi, I'm Brandon</h1>
           <hr />
-          <h3>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-            repudiandae numquam cumque alias ullam assumenda.adipisicing elit.
-          </h3>
-          <button>My Resume</button>
+          <p>
+            Software and web developer. I enjoy all things creating and
+            developing. Hard working, quick thinking and problem solving.
+          </p>
+          <button class="resume-button">
+            <i class="fa fa-download"></i>
+            <h3 class="resume-hover">My resume</h3>
+          </button>
         </div>
       </div>
+      <!-- </div> -->
+      <!-- <div class="second-color"> -->
       <div class="about contain">
-        <h1>About Me</h1>
-        <hr />
+        <h1 class="about-headings">About Me</h1>
+        <hr class="about-hr" />
+        <div class="about-intro">
+          <img class="about-img" src="./images/IMG_1341.jpg" alt="Avatar" />
+          <div class="about-text-points">
+            <h3>Physiotherapist</h3>
+            <h3>Aucklander</h3>
+            <h3>Techy</h3>
+            <h3>Learner</h3>
+            <h3>Gamer</h3>
+            <h3>Professional</h3>
+            <h3>Passionate</h3>
+
+            <h3>Enthusiastic</h3>
+            <h3>Persistent</h3>
+            <h3>Confident</h3>
+
+            <h3>Respectful</h3>
+            <h3>Reliable</h3>
+          </div>
+        </div>
+        <div class="about-pre-grids">
+          <h1>I am.....</h1>
+        </div>
         <div class="about-grids">
-          <div class="logo-col">
+          <div class="logo-col time">
             <i class="fa fa-clock-o"></i>
             <h3>Timely</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p>Well organised, always on schedule, dependable.</p>
           </div>
 
-          <div class="logo-col">
+          <div class="logo-col intuitive">
             <i class="fa fa-lightbulb-o"></i>
-            <h3>Intuitive</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <h3>Creative</h3>
+            <p>Artistic, imaginative, mobile-first design.</p>
           </div>
 
-          <div class="logo-col">
+          <div class="logo-col precise">
+            <i class="fa fa-wrench"></i>
+            <h3>Detail-oriented</h3>
+            <p>Double-triple check, problem solver, analytical.</p>
+          </div>
+          <div class="logo-col team">
             <i class="fa fa-wechat"></i>
             <h3>Team Player</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <p>Responsible, communicator, down-to-earth.</p>
           </div>
+        </div>
+      </div>
+      <div class="technologies-wrapper">
+        <div id="technology" class="technologies contain">
+          <h2>What Do I use?</h2>
+          <hr />
+          <p>I have experience with the following tools and technologies:</p>
+          <div class="tech-logos-container">
+            <div class="tech-individual javascript-logo">
+              <img src="./images/jslog.png" alt="" />
+              <p>JavaScript</p>
+            </div>
+            <div class="tech-individual html-logo">
+              <img src="./images/htmllogo.png" alt="" />
+              <p>HTML 5</p>
+            </div>
+            <div class="tech-individual css-logo">
+              <img src="./images/csslogo.png" alt="" />
+              <p>CSS 3</p>
+            </div>
+            <div class="tech-individual bootstrap-logo">
+              <img src="./images/Bootstraplogo.png" alt="" />
+              <p>Bootstrap</p>
+            </div>
+            <div class="tech-individual node-logo">
+              <img src="./images/nodelog.png" alt="" />
+              <p>NodeJS</p>
+            </div>
+            <div class="tech-individual react-logo">
+              <img src="./images/reactlogo.png" alt="" />
+              <p>React</p>
+            </div>
+            <div class="tech-individual mongo-logo">
+              <img src="./images/mongo.png" alt="" />
+              <p>MongoDB</p>
+            </div>
+            <div class="tech-individual git-logo">
+              <img src="./images/git.png" alt="" />
+              <p>Git</p>
+            </div>
+          </div>
+        </div>
 
-          <div class="logo-col">
-            <i class="fa fa-wrench"></i>
-            <h3>Precise</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+        <!-- </div> -->
+        <!-- <div class="third-color"> -->
+        <div class="my-projects contain">
+          <div class="projects-head">
+            <div id="project"></div>
+            <h2>My Projects</h2>
+            <hr />
+          </div>
+          <div class="project-gifs gst-calculator">
+            <img
+              src="./images/Feb-21-2020 16-46-09portfolio.gif"
+              alt=""
+              class="newGif"
+            />
+            <h2>Portfolio</h2>
+            <p>JavaScript, HTML, CSS</p>
+          </div>
+          <div class="project-gifs weather-search">
+            <img src="./images/newsiteimg.gif" class="newGif" alt="" />
+            <h2>Weather Lookup</h2>
+            <p>React, Redux, MongoDB, NodeJS, Bootstrap</p>
+          </div>
+          <div class="project-gifs physio-site">
+            <img
+              src="./images/Feb-26-2020 02-15-42physiosite.gif"
+              class="newGif"
+              alt=""
+            />
+            <h2>Physio Revolution</h2>
+            <p>React, Redux, MongoDB, NodeJS, Bootstrap</p>
           </div>
         </div>
       </div>
-      <div class="technologies contain">
-        <h1>What Do I use?</h1>
-        <hr />
-        <p>I have experience with the following tools and technologies</p>
-        <div class="tech-logos-container">
-          <div class="tech-individual javascript-logo">
-            <img src="./images/hiclipart.com.png" alt="" />
-            <p>JavaScript</p>
-          </div>
-          <div class="tech-individual html-logo">
-            <img src="./images/htmllogo.png" alt="" />
-            <p>HTML 5</p>
-          </div>
-          <div class="tech-individual css-logo">
-            <img src="./images/csslogo.png" alt="" />
-            <p>CSS 3</p>
-          </div>
-          <div class="tech-individual bootstrap-logo">
-            <img src="./images/Bootstraplogo.png" alt="" />
-            <p>Bootstrap</p>
-          </div>
-          <div class="tech-individual node-logo">
-            <img src="./images/nodelog.png" alt="" />
-            <p>NodeJS</p>
-          </div>
-          <div class="tech-individual react-logo">
-            <img src="./images/reactlogo.png" alt="" />
-            <p>React</p>
-          </div>
-          <div class="tech-individual mongo-logo">
-            <img src="./images/mongo.png" alt="" />
-            <p>MongoDB</p>
-          </div>
-          <div class="tech-individual git-logo">
-            <img src="./images/git.png" alt="" />
-            <p>Git</p>
-          </div>
-        </div>
-      </div>
-      <div class="my-projects contain">
-        <h1>My Projects</h1>
-        <hr />
-        <!-- Swiper -->
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div
-              class="swiper-slide"
-              style="background-image:url(./images/siteimages/free-images-crello.png)"
-            >
-              <!-- <img src="./images/siteimages/free-images-crello.png" alt="" /> -->
-              <p>Slide 1</p>
+      <div class="cloud-cover">
+        <div id="contacting" class="contact contain">
+          <h2>Contact</h2>
+          <hr />
+          <div class="contact-grids">
+            <div class="contact-icons">
+              <p>Email: tsai8@hotmail.com</p>
             </div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(./images/siteimages/free-images-flickr.png)"
-            >
-              <!-- <img src="./images/siteimages/free-images-flickr.png" alt="" /> -->
-              <p>Slide 2</p>
+            <div class="contact-icons">
+              <p>Phone: 022 379 1246</p>
             </div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(./images/siteimages/free-images-istock.png)"
-            >
-              <!-- <img src="./images/siteimages/free-images-istock.png" alt="" /> -->
-              <p>Slide 3</p>
-            </div>
-            <div
-              class="swiper-slide"
-              style="background-image:url(./images/siteimages/free-images-pexels.png)"
-            >
-              <!-- <img src="./images/siteimages/free-images-pexels.png" alt="" /> -->
 
-              <p>Slide 4</p>
+            <div class="contact-icons">
+              <p>Github: https://github.com/sqweeq</p>
             </div>
           </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
         </div>
+        <button onclick="goToTop()" id="myBtn">
+          <i class="fa fa-long-arrow-up fa-2x"></i>
+          <p class="go-btn-text">Go up</p>
+        </button>
+
+        <footer class="footer">
+          <h3>
+            Brandon Tsai 2020 &copy
+          </h3>
+        </footer>
       </div>
-      <div class="contact contain"><h1>Contact</h1></div>
-      <footer class="footer">&copy Brandon Tsai 2020</footer>
     </div>
-    <script src="path/to/swiper.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        effect: "coverflow",
-        centeredSlides: true,
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true
-        },
-        slidesPerView: "auto",
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev"
-        }
-      });
-    </script>
+
+    <script src="./app.js" type="text/javascript"></script>
   </body>
 </html>
