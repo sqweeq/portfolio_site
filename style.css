@@ -250,7 +250,7 @@ button:focus {
   width: auto;
 
   /* background: rgba(245, 245, 245, 0.897); */
-  margin: 0rem 2rem;
+  margin: 10rem 2rem 0rem 2rem;
 }
 .projects-head h2 {
   padding: 2rem 0rem 1.5rem 0rem;
