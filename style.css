@@ -32,7 +32,7 @@ span {
 .portfolio-container {
   background: rgba(0, 0, 0, 0.954);
 
-  background-image: url("./images/coolstars.png");
+  background-image: url("./images/coolstars-compressor.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
