@@ -46,7 +46,8 @@ span {
 .portfolio-container {
   background: rgba(0, 0, 0, 0.954);
 
-  background-image: url("./images/coolstars-compressor.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("./images/coolstars-compressor.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -168,7 +169,7 @@ button:focus {
 .about-intro {
   display: flex;
   flex-direction: row;
-
+  /* height: 70vh; */
   width: 100%;
 }
 .about img {
