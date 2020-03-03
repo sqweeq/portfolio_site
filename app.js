@@ -1,8 +1,21 @@
 // function to scroll to top on refresh
-document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+document.body.scrollTop = document.documentElement.scrollTop = 0;
+jQuery(document).ready(function() {
+  jQuery("html").animate({ scrollTop: 0 }, "fast");
+});
 
-document.body.scrollTop = 0; // For Safari
-
+$("body").append(
+  '<div style="" id="loadingDiv"><div class="loader"></div></div>'
+);
+$(window).on("load", function() {
+  setTimeout(removeLoader, 2250); //wait for page load PLUS two seconds.
+});
+function removeLoader() {
+  $("#loadingDiv").fadeOut(500, function() {
+    // fadeOut complete. Remove the loading div
+    $("#loadingDiv").remove(); //makes page more lightweight
+  });
+}
 // function to show divs when scrolled to
 function scrollAppear() {
   let aboutHead = document.querySelector(".about-headings");
