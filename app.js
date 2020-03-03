@@ -3,7 +3,7 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
 jQuery(document).ready(function() {
   jQuery("html").animate({ scrollTop: 0 }, "fast");
 });
-
+// add loading gif before page loads
 $("body").append(
   '<div style="" id="loadingDiv"><div class="loader"></div></div>'
 );
@@ -81,7 +81,10 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (
+    document.body.scrollTop > 470 ||
+    document.documentElement.scrollTop > 470
+  ) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

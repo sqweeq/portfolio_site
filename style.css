@@ -23,7 +23,7 @@ body {
   left: 0;
   width: 100%;
   height: 1000%;
-  background-color: rgba(18, 18, 18, 0.817);
+  background-color: rgb(8, 8, 8);
 
   background-image: url("./images//giphy.gif");
   background-size: contain;
