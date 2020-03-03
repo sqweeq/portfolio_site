@@ -3,6 +3,10 @@ document.body.scrollTop = document.documentElement.scrollTop = 0;
 jQuery(document).ready(function() {
   jQuery("html").animate({ scrollTop: 0 }, "fast");
 });
+window.onbeforeunload = function() {
+  window.scrollTo(0, 0);
+};
+
 // add loading gif before page loads
 $("body").append(
   '<div style="" id="loadingDiv"><div class="loader"></div></div>'
