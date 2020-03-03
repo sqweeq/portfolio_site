@@ -7,6 +7,7 @@ body {
   font-family: "Quicksand", sans-serif;
   color: rgba(255, 255, 255, 0.941);
 }
+/* set scalable font and line height */
 body {
   font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 
@@ -133,9 +134,10 @@ button:focus {
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.934); */
+
   justify-content: center;
   padding: 3.7rem 5rem 1.5rem 5rem;
+  height: auto;
 }
 
 .about h1 {
@@ -163,24 +165,30 @@ button:focus {
 .about-text-points {
   margin: 0rem 2rem;
   width: 100%;
-  height: 100%;
+
   position: relative;
   margin-bottom: 4rem;
+  height: 60vh;
 }
 .about-text-points h3 {
   position: absolute;
+  display: block;
 }
 .about-pre-grids {
-  margin-top: 27rem;
+  display: block;
 }
 
+.about-pre-grids h1 {
+  margin: 10rem 0rem;
+  display: block;
+}
 .about-grids {
   margin-top: 20rem;
   margin-bottom: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 25%;
+  height: 100%;
 }
 .logo-col {
   text-align: center;
@@ -249,7 +257,6 @@ button:focus {
 .my-projects {
   width: auto;
 
-  /* background: rgba(245, 245, 245, 0.897); */
   margin: 10rem 2rem 0rem 2rem;
 }
 .projects-head h2 {
@@ -337,12 +344,10 @@ button:focus {
 .physio-site,
 .projects-head {
   opacity: 0;
-  /* transform: translateY(10px); */
+
   transition: 1s all ease-in-out;
 }
 
-/* .about {
-} */
 .scroll-appear {
   opacity: 1;
   transform: translateY(0px);
@@ -430,13 +435,15 @@ button:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    height: auto;
   }
   .about-text-points h3 {
     position: static;
-
+    height: auto;
     margin: 0.4rem;
     text-align: center;
   }
+
   .navbar-text {
     padding: 0.3rem;
   }
@@ -509,6 +516,7 @@ button:focus {
     color: rgb(99, 58, 222);
   }
 }
+/* media 481px */
 @media (min-width: 481px) and (max-width: 767px) {
   .body-space {
     height: 95vh;
@@ -562,6 +570,7 @@ button:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    height: 70vh;
   }
   .about-text-points h3 {
     position: static;
@@ -646,7 +655,7 @@ button:focus {
   }
 }
 
-/* laptop/tablet */
+/*media laptop/tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     justify-content: flex-end;
@@ -730,7 +739,7 @@ button:focus {
     color: rgb(99, 58, 222);
   }
 }
-/* laptop L */
+/* media laptop L */
 @media (min-width: 1025px) and (max-width: 1440px) {
   .navbar {
     justify-content: flex-end;
@@ -762,7 +771,7 @@ button:focus {
 
   .about-text-points {
     width: 30vw;
-    height: 30vh;
+    height: auto;
 
     margin: 7rem 0rem 0rem 0rem;
   }
@@ -813,7 +822,7 @@ button:focus {
     color: rgb(99, 58, 222);
   }
 }
-/* 4k */
+/* media 4k */
 @media (min-width: 1441px) and (max-width: 2560px) {
   .navbar {
     justify-content: flex-end;
@@ -857,7 +866,6 @@ button:focus {
   }
   .about-text-points h3 {
     position: static;
-    padding: 2rem 0rem;
   }
   .about-pre-grids {
     margin: 25rem 0rem;
