@@ -10,10 +10,14 @@ window.onbeforeunload = function() {
 // add loading gif before page loads
 $("body").append(
   '<div style="" id="loadingDiv"><div class="loader"></div></div>'
-);
-$(window).on("load", function() {
-  setTimeout(removeLoader, 10); //wait for page load PLUS two seconds.
-});
+),
+  $(document).ready(function() {
+    setTimeout(removeLoader, 3500);
+  });
+// $(window).on("load", function() {
+//   setTimeout(removeLoader, 10); //wait for page load PLUS two seconds.
+// });
+
 function removeLoader() {
   $("#loadingDiv").fadeOut(500, function() {
     // fadeOut complete. Remove the loading div
