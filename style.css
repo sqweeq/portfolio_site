@@ -18,7 +18,7 @@ body {
 } */
 
 #loadingDiv {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -26,7 +26,8 @@ body {
   background-color: rgb(8, 8, 8);
 
   background-image: url("./images//giphy2.gif");
-  background-size: contain;
+  padding-top: 30vh;
+  background-position: top;
   background-repeat: no-repeat;
 
   overflow: hidden;
